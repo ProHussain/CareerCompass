@@ -9,21 +9,17 @@
     <color name="colorAccent">#FF4081</color>
 
     <!-- Background Colors -->
-    <color name="colorBackground">#FFFFFF</color>
-    <color name="colorBackgroundSecondary">#F5F5F5</color>
+    <color name="colorBackground">#121212</color>
+    <color name="colorBackgroundSecondary">#1E1E1E</color>
 
     <!-- Text Colors -->
-    <color name="colorTextPrimary">#262626</color>
-    <color name="colorTextSecondary">#BEBEBE</color>
+    <color name="colorTextPrimary">#FFFFFF</color>
+    <color name="colorTextSecondary">#B3B3B3</color>
 
     <!-- Button Colors -->
     <color name="colorButtonPrimary">#7265E2</color>
     <color name="colorButtonSecondary">#FF4081</color>
 
     <!-- Divider Color -->
-    <color name="dividerColor">#e0e0e0</color>
-    <color name="white">#FFFFFF</color>
-
-    <!-- Shadow Color -->
-    <color name="shadowColor">#1A000000</color>
+    <color name="dividerColor">#2c2c2c</color>
 </resources>

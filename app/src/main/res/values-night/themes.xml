@@ -1,7 +1,30 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <!-- Base application theme. -->
     <style name="Base.Theme.CareerCompass" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <!-- Primary Colors -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!-- Text Colors -->
+        <item name="android:textColorPrimary">@color/colorTextPrimary</item>
+        <item name="android:textColorSecondary">@color/colorTextSecondary</item>
+
+        <!-- Background Colors -->
+        <item name="android:windowBackground">@color/colorBackground</item>
+        <item name="android:colorBackground">@color/colorBackground</item>
+
+        <!-- Button Colors -->
+        <item name="colorButtonNormal">@color/colorButtonPrimary</item>
+
+        <!-- Divider Color -->
+        <item name="android:divider">@color/dividerColor</item>
+        <item name="android:dividerHorizontal">@color/dividerColor</item>
+        <item name="android:dividerVertical">@color/dividerColor</item>
+
+        <!-- Window Animation -->
+        <item name="android:windowAnimationStyle">@style/windowAnimationTransition</item>
     </style>
+
+    <style name="Theme.CareerCompass" parent="Base.Theme.CareerCompass" />
 </resources>

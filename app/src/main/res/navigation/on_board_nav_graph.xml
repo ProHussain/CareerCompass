@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/on_board_nav_graph"
+    app:startDestination="@id/onBoardOneFragment">
+
+    <fragment
+        android:id="@+id/onBoardOneFragment"
+        android:name="com.hashmac.careercompass.ui.onboard.fragments.OnBoardOneFragment"
+        android:label="fragment_on_board_one"
+        tools:layout="@layout/fragment_on_board_one">
+        <action
+            android:id="@+id/action_onBoardOneFragment_to_onBoardTwoFragment"
+            app:destination="@id/onBoardTwoFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/onBoardTwoFragment"
+        android:name="com.hashmac.careercompass.ui.onboard.fragments.OnBoardTwoFragment"
+        android:label="fragment_on_board_two"
+        tools:layout="@layout/fragment_on_board_two">
+        <action
+            android:id="@+id/action_onBoardTwoFragment_to_onBoardThreeFragment"
+            app:destination="@id/onBoardThreeFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/onBoardThreeFragment"
+        android:name="com.hashmac.careercompass.ui.onboard.fragments.OnBoardThreeFragment"
+        android:label="fragment_on_board_three"
+        tools:layout="@layout/fragment_on_board_three" />
+</navigation>
