@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="levels_of_edu">
+        <item>Int.</item>
+        <item>BA</item>
+        <item>BSc.</item>
+        <item>BS.</item>
+        <item>MA.</item>
+        <item>MS.</item>
+        <item>PhD.</item>
+    </array>
+
+    <array name="fields_of_study">
+        <item>Computer Science</item>
+        <item>Computer Engineering</item>
+        <item>Software Engineering</item>
+        <item>Information Technology</item>
+        <item>Electrical Engineering</item>
+        <item>Mechanical Engineering</item>
+        <item>Chemical Engineering</item>
+        <item>Industrial Engineering</item>
+        <item>Business Administration</item>
+        <item>Accounting</item>
+        <item>Finance</item>
+        <item>Marketing</item>
+        <item>Management</item>
+        <item>Human Resources</item>
+        <item>Law</item>
+        <item>Medicine</item>
+        <item>Pharmacy</item>
+        <item>Architecture</item>
+        <item>Arts</item>
+        <item>Design</item>
+        <item>Education</item>
+        <item>Psychology</item>
+        <item>Political Science</item>
+        <item>International Relations</item>
+        <item>Journalism</item>
+        <item>Mass Communication</item>
+        <item>English</item>
+        <item>History</item>
+        <item>Geography</item>
+        <item>Mathematics</item>
+        <item>Physics</item>
+        <item>Chemistry</item>
+        <item>Biology</item>
+        <item>Geology</item>
+        <item>Geophysics</item>
+        <item>Statistics</item>
+        <item>Actuarial Science</item>
+    </array>
+
+    <array name="small_business_ideas">
+        <item>Start a Dropshipping Business</item>
+        <item>Start a Print-on-Demand Business</item>
+        <item>Start a Custom Cake Business</item>
+        <item>Become a Freelance Writer</item>
+        <item>Become a Virtual Assistant</item>
+        <item>Become a Social Media Influencer</item>
+    </array>
+
+</resources>

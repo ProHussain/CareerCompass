@@ -22,8 +22,6 @@
         <item name="android:dividerHorizontal">@color/dividerColor</item>
         <item name="android:dividerVertical">@color/dividerColor</item>
 
-        <!-- Window Animation -->
-        <item name="android:windowAnimationStyle">@style/windowAnimationTransition</item>
     </style>
 
     <style name="Theme.CareerCompass" parent="Base.Theme.CareerCompass" />

@@ -35,4 +35,26 @@
     <string name="cgpa">CGPA</string>
     <string name="graduation_year">Graduation Year</string>
     <string name="about">About</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="business">Business</string>
+    <string name="career">Career</string>
+    <string name="notification">Notification</string>
+    <string name="welcome_to_ncareercompass">Welcome to\nCareerCompass</string>
+    <string name="banner_one">50% off\ntake any course</string>
+    <string name="join_now">Join Now</string>
+    <string name="find_your_path">Find your path</string>
+    <string name="android_developer">Android Developer</string>
+    <string name="_50_5k">50.5k</string>
+    <string name="_62_8k">62.8k</string>
+    <string name="_42_6k">42.6k</string>
+    <string name="ios_developer">IOS Developer</string>
+    <string name="web_developer">Web Developer</string>
+    <string name="top_business_ideas">Top Business Ideas</string>
+    <string name="b1">Invest in Real Estate</string>
+    <string name="start_a_dropshipping_business">Start a Dropshipping Business</string>
+    <string name="become_a_virtual_assistant">Become a Virtual Assistant</string>
+    <string name="become_a_freelance_writer">Become a Freelance Writer</string>
+    <string name="b3">Start a Custom Cake Design Business</string>
+    <string name="b2">Start a Print on Demand Business</string>
 </resources>
