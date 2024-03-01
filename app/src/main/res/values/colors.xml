@@ -5,28 +5,10 @@
     <color name="colorPrimaryDark">#4E46B5</color>
     <color name="colorPrimaryLight">#9E97EB</color>
 
-    <!-- Accent Color -->
-    <color name="colorAccent">#FF4081</color>
+    <color name="dark">#1E232C</color>
+    <color name="border">#E8ECF4</color>
+    <color name="darkGrey">#6A707C</color>
+    <color name="grey">#8391A1</color>
 
-    <!-- Background Colors -->
-    <color name="colorBackground">#FFFFFF</color>
-    <color name="colorBackgroundSecondary">#F5F5F5</color>
-
-    <!-- Text Colors -->
-    <color name="colorTextPrimary">#262626</color>
-    <color name="colorTextSecondary">#BEBEBE</color>
-
-    <!-- Button Colors -->
-    <color name="colorButtonPrimary">#7265E2</color>
-    <color name="colorButtonSecondary">#FF4081</color>
-
-    <!-- Divider Color -->
-    <color name="dividerColor">#e0e0e0</color>
     <color name="white">#FFFFFF</color>
-
-    <!-- Shadow Color -->
-    <color name="shadowColor">#1A000000</color>
-    <color name="colorAndroid">#9CCC65</color>
-    <color name="colorIOS">#29B6F6</color>
-    <color name="colorWeb">#FFA726</color>
 </resources>
