@@ -79,4 +79,14 @@
     <string name="max_subjects">Max 3 subjects</string>
     <string name="hint_bio">Enter your bio</string>
     <string name="btn_complete">Complete</string>
+    <string name="become_a_photographer_or_event_planner">Become a Photographer or Event Planner</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="notification_message">Keep up to date\nwith your notifications</string>
+    <string name="temp_notification">Your favorite business has a new update. Discover more.</string>
+    <string name="message_profile">Let\'s get to\nknow you better</string>
+    <string name="basics">Basics</string>
+    <string name="education">Education</string>
+    <string name="logout">Logout</string>
+    <string name="type_message">Type your message here ...</string>
 </resources>

@@ -18,12 +18,14 @@
             android:layout_marginStart="@dimen/space_between_views"
             android:layout_marginTop="@dimen/space_between_views"
             android:text="@string/welcome_to_ncareercompass"
-            android:textColor="@color/colorTextPrimary"
+            android:textColor="@color/dark"
+            android:fontFamily="@font/urbanist_bold"
             android:textSize="@dimen/title_text_size"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageButton
+            android:visibility="gone"
             android:id="@+id/imageButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -77,7 +79,7 @@
                         android:layout_marginStart="16dp"
                         android:elevation="3dp"
                         android:text="@string/banner_one"
-                        android:textColor="@color/colorBackground"
+                        android:textColor="@color/white"
                         android:textSize="18sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -88,7 +90,7 @@
                         android:id="@+id/button"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:backgroundTint="@color/colorAccent"
+                        android:backgroundTint="@color/dark"
                         android:elevation="10dp"
                         android:text="@string/join_now"
                         android:textSize="12sp"
@@ -106,8 +108,8 @@
             android:layout_width="0dp"
             android:layout_height="172dp"
             android:layout_marginStart="@dimen/space_between_views"
-            android:layout_marginTop="@dimen/space_between_views"
-            android:layout_marginEnd="12dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="11dp"
             app:cardBackgroundColor="@color/colorAndroid"
             app:cardCornerRadius="8dp"
             app:layout_constraintEnd_toStartOf="@+id/cardView3"
@@ -133,14 +135,17 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
                     android:text="@string/_50_5k"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/urbanist_semi_bold"
+                    android:textSize="16sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
                     android:text="@string/android_developer"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/urbanist_medium"
                     android:textSize="16sp" />
 
             </LinearLayout>
@@ -151,7 +156,7 @@
             android:id="@+id/cardView3"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_marginStart="12dp"
+            android:layout_marginStart="8dp"
             android:layout_marginEnd="@dimen/space_between_views"
             android:layout_marginBottom="12dp"
             app:cardBackgroundColor="@color/colorIOS"
@@ -172,14 +177,17 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/_62_8k"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/urbanist_semi_bold"
+                    android:textSize="16sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:text="@string/ios_developer"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/urbanist_medium"
                     android:textSize="16sp" />
             </LinearLayout>
 
@@ -190,7 +198,7 @@
             android:id="@+id/cardView4"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="11dp"
             android:layout_marginEnd="@dimen/space_between_views"
             app:cardBackgroundColor="@color/colorWeb"
             app:cardCornerRadius="8dp"
@@ -210,14 +218,17 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/_42_6k"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/urbanist_semi_bold"
+                    android:textSize="16sp"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:text="@string/web_developer"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/urbanist_medium"
                     android:textSize="16sp" />
             </LinearLayout>
 
@@ -230,8 +241,9 @@
             android:layout_marginStart="@dimen/space_between_views"
             android:layout_marginTop="@dimen/space_between_views"
             android:text="@string/find_your_path"
-            android:textSize="16sp"
+            android:textSize="18sp"
             android:textStyle="bold"
+            android:textColor="@color/darkGrey"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
 
@@ -253,7 +265,9 @@
             android:layout_marginStart="@dimen/space_between_views"
             android:layout_marginTop="@dimen/space_between_views"
             android:layout_marginEnd="@dimen/space_between_views"
+            android:layout_marginBottom="22dp"
             android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView6">
@@ -270,7 +284,7 @@
                     android:layout_gravity="center_vertical"
                     android:layout_margin="12dp"
                     android:text="@string/start_a_dropshipping_business"
-                    android:textColor="@color/colorBackground"
+                    android:textColor="@color/white"
                     android:textSize="16sp" />
             </androidx.cardview.widget.CardView>
 
@@ -287,7 +301,7 @@
                     android:layout_gravity="center_vertical"
                     android:layout_margin="12dp"
                     android:text="@string/b2"
-                    android:textColor="@color/colorBackground"
+                    android:textColor="@color/white"
                     android:textSize="16sp" />
             </androidx.cardview.widget.CardView>
 
@@ -304,7 +318,7 @@
                     android:layout_gravity="center_vertical"
                     android:layout_margin="12dp"
                     android:text="@string/b3"
-                    android:textColor="@color/colorBackground"
+                    android:textColor="@color/white"
                     android:textSize="16sp" />
             </androidx.cardview.widget.CardView>
 
@@ -321,7 +335,7 @@
                     android:layout_gravity="center_vertical"
                     android:layout_margin="12dp"
                     android:text="@string/become_a_freelance_writer"
-                    android:textColor="@color/colorBackground"
+                    android:textColor="@color/white"
                     android:textSize="16sp" />
             </androidx.cardview.widget.CardView>
 
@@ -338,7 +352,7 @@
                     android:layout_gravity="center_vertical"
                     android:layout_margin="12dp"
                     android:text="@string/become_a_virtual_assistant"
-                    android:textColor="@color/colorBackground"
+                    android:textColor="@color/white"
                     android:textSize="16sp" />
             </androidx.cardview.widget.CardView>
 
@@ -354,8 +368,8 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_margin="12dp"
-                    android:text="Become a Photographer or Event Planner"
-                    android:textColor="@color/colorBackground"
+                    android:text="@string/become_a_photographer_or_event_planner"
+                    android:textColor="@color/white"
                     android:textSize="16sp" />
             </androidx.cardview.widget.CardView>
         </LinearLayout>
