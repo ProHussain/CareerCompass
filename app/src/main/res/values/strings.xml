@@ -89,4 +89,5 @@
     <string name="education">Education</string>
     <string name="logout">Logout</string>
     <string name="type_message">Type your message here ...</string>
+    <string name="temp_message_one">Hello World! Welcome to the world of Android Development</string>
 </resources>
