@@ -1,179 +1,140 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".ui.auth.fragments.complete_profile.CompleteProfileFragment">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/complete_profile"
-        android:textSize="@dimen/title_text_size"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.20" />
+        android:orientation="vertical"
+        android:padding="22dp">
+
+        <TextView
+            android:id="@+id/tvWelcomeMessage"
+            android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/urbanist_bold"
+            android:lineSpacingExtra="2dp"
+            android:text="@string/complete_profile_message"
+            android:textColor="@color/dark"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/etSelectDegree"
+            android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+        android:background="@drawable/bg_et_auth"
+            android:hint="@string/hint_select_degree"
+        android:inputType="none"
+            android:padding="18dp"
+            android:textColor="@color/darkGrey"
+            android:textColorHint="@color/grey"
+            tools:ignore="Autofill" />
 
     <AutoCompleteTextView
-        android:id="@+id/etLevel"
-        android:layout_width="0dp"
+        android:id="@+id/etSubject"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/space_between_views"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="8dp"
-        android:autofillHints="name"
+        android:layout_marginTop="16dp"
         android:background="@drawable/bg_et_auth"
-        android:elevation="3dp"
-        android:hint="@string/level"
-        android:drawableEnd="@drawable/ic_drop_down"
-        android:inputType="none"
-        android:shadowColor="@color/shadowColor"
-        app:layout_constraintEnd_toStartOf="@+id/etField"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        android:hint="@string/enter_your_subject"
+        android:padding="18dp"
+        android:textColor="@color/darkGrey"
+        android:textColorHint="@color/grey"
+        tools:ignore="Autofill" />
 
-
-    <AutoCompleteTextView
-        android:id="@+id/etField"
-        android:layout_width="wrap_content"
+        <AutoCompleteTextView
+            android:id="@+id/etPassingYear"
+            android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="@dimen/space_between_views"
-        android:autofillHints="name"
+            android:layout_marginTop="16dp"
         android:background="@drawable/bg_et_auth"
-        android:elevation="3dp"
-        android:ems="10"
-        android:hint="@string/field_of_study"
-        android:inputType="none"
-        android:drawableEnd="@drawable/ic_drop_down"
-        android:shadowColor="@color/shadowColor"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/etLevel"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-
-    <EditText
-        android:id="@+id/etInstitution"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/space_between_views"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="@dimen/space_between_views"
-        android:background="@drawable/bg_et_auth"
-        android:elevation="3dp"
-        android:ems="10"
-        android:hint="@string/institution"
-        android:inputType="textPersonName"
-        android:shadowColor="@color/shadowColor"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etLevel"
-        android:importantForAutofill="no" />
-
-    <EditText
-        android:id="@+id/etGraduationYear"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/space_between_views"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="8dp"
-        android:autofillHints="name"
-        android:background="@drawable/bg_et_auth"
-        android:elevation="3dp"
-        android:ems="10"
-        android:hint="@string/graduation_year"
-        android:inputType="number"
-        android:maxLength="4"
-        android:shadowColor="@color/shadowColor"
-        app:layout_constraintEnd_toStartOf="@+id/etCGPA"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etInstitution" />
+            android:hint="@string/hint_passing_year"
+            android:padding="18dp"
+            android:textColor="@color/darkGrey"
+            android:textColorHint="@color/grey"
+            tools:ignore="Autofill" />
 
     <EditText
         android:id="@+id/etCGPA"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="@dimen/space_between_views"
+        android:layout_marginTop="16dp"
         android:background="@drawable/bg_et_auth"
-        android:elevation="3dp"
-        android:ems="10"
-        android:hint="@string/cgpa"
+        android:hint="@string/hint_cgpa"
         android:inputType="numberDecimal"
-        android:maxLength="4"
-        android:shadowColor="@color/shadowColor"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/etGraduationYear"
-        app:layout_constraintTop_toBottomOf="@+id/etInstitution"
-        android:importantForAutofill="no" />
-
-    <EditText
-        android:id="@+id/etAbout"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/space_between_views"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="@dimen/space_between_views"
-        android:background="@drawable/bg_et_auth"
-        android:elevation="3dp"
-        android:ems="10"
-        android:maxLength="20"
-        android:hint="@string/about"
-        android:inputType="textPassword"
-        android:shadowColor="@color/shadowColor"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etCGPA"
+        android:padding="18dp"
+        android:textColor="@color/darkGrey"
+        android:textColorHint="@color/grey"
         tools:ignore="Autofill" />
 
-    <ImageButton
-        android:id="@+id/btnNext"
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/etInstitute"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="12dp"
-        android:backgroundTint="@android:color/transparent"
-        android:src="@drawable/btn_auth_next"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etAbout"
-        app:layout_constraintVertical_bias="0.25"
-        tools:ignore="ContentDescription" />
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_et_auth"
+        android:hint="@string/hint_institute"
+        android:inputType="text"
+        android:padding="18dp"
+        android:textColor="@color/darkGrey"
+        android:textColorHint="@color/grey"
+        tools:ignore="Autofill" />
+
+        <EditText
+            android:id="@+id/etSelectFavSubjects"
+            android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_et_auth"
+            android:hint="@string/hint_favorite_subjects"
+            android:inputType="none"
+            android:padding="18dp"
+            android:textColor="@color/darkGrey"
+            android:textColorHint="@color/grey"
+            tools:ignore="Autofill" />
 
     <TextView
-        android:id="@+id/tvCreateAccount"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/complete"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/btnNext"
-        app:layout_constraintEnd_toStartOf="@+id/btnNext"
-        app:layout_constraintTop_toTopOf="@+id/btnNext" />
+        android:layout_marginTop="4dp"
+        android:gravity="end"
+        android:text="@string/max_subjects"
+        android:textColor="@color/grey" />
 
-    <TextView
-        android:id="@+id/tvCreate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/complete_profile_slogan"
-        android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnNext"
-        app:layout_constraintVertical_bias="0.426" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <EditText
+            android:id="@+id/etAbout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_et_auth"
+            android:gravity="start"
+            android:hint="@string/hint_bio"
+            android:lines="3"
+            android:maxLines="3"
+            android:padding="18dp"
+            android:textColor="@color/darkGrey"
+            android:textColorHint="@color/grey"
+            tools:ignore="Autofill" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnCompleteProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bg_btn_auth"
+            android:fontFamily="@font/urbanist_semi_bold"
+            android:text="@string/btn_complete"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+</ScrollView>

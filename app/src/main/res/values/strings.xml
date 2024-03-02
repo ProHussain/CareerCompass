@@ -8,8 +8,6 @@
     <string name="onBoardDescriptionTwo">Discover your path, find jobs, explore small business insights, and learn new skills with our AI-powered app.</string>
     <string name="onBoardTitleThree">Empower\nYour Future</string>
     <string name="onBoardDescriptionThree">Uncover strengths, search jobs, dive into small business insights, and boost skills. Your roadmap to success begins now.</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="hello">Hello</string>
     <string name="sing_in_to_your_account">Sing in to your account</string>
     <string name="password">Password</string>
@@ -71,4 +69,14 @@
     <string name="txt_register_bottom">Already have an account? Login Now</string>
     <string name="msg_forgot_password">Don\'t worry! It occurs. Please enter the email address linked with your account.</string>
     <string name="btn_send_code">Send Code</string>
+    <string name="complete_profile_message">Connect better,\ncomplete your profile</string>
+    <string name="hint_select_degree">Select your degree</string>
+    <string name="enter_your_subject">Enter your subject</string>
+    <string name="hint_passing_year">Enter your passing year</string>
+    <string name="hint_cgpa">Enter your CGPA</string>
+    <string name="hint_institute">Enter your institute</string>
+    <string name="hint_favorite_subjects">Select your favorite subjects</string>
+    <string name="max_subjects">Max 3 subjects</string>
+    <string name="hint_bio">Enter your bio</string>
+    <string name="btn_complete">Complete</string>
 </resources>
