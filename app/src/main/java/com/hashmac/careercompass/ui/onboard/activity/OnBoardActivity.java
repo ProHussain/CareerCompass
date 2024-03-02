@@ -13,7 +13,7 @@ import com.hashmac.careercompass.ui.base.BaseActivity;
 public class OnBoardActivity extends BaseActivity {
 
     private static final String TAG = "OnBoardActivity";
-    private long splashScreenDuration = 2000L;
+    private final long splashScreenDuration = 2000L;
     private boolean splashScreenOn = true;
 
     private ActivityOnBoardBinding boardBinding;

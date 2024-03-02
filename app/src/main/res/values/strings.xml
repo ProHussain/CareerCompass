@@ -8,30 +8,6 @@
     <string name="onBoardDescriptionTwo">Discover your path, find jobs, explore small business insights, and learn new skills with our AI-powered app.</string>
     <string name="onBoardTitleThree">Empower\nYour Future</string>
     <string name="onBoardDescriptionThree">Uncover strengths, search jobs, dive into small business insights, and boost skills. Your roadmap to success begins now.</string>
-    <string name="hello">Hello</string>
-    <string name="sing_in_to_your_account">Sing in to your account</string>
-    <string name="password">Password</string>
-    <string name="email">Email</string>
-    <string name="forgot_your_password">Forgot your password?</string>
-    <string name="sing_in">Sing in</string>
-    <string name="don_t_have_an_account_create">Don\'t have an account? <u>Create</u></string>
-    <string name="create_account">Create account</string>
-    <string name="username">UserName</string>
-    <string name="phone">Phone</string>
-    <string name="or_create_account_using_social_media">Or create account using social media</string>
-    <string name="create">Create</string>
-    <string name="send">Send</string>
-    <string name="forgot_slogan">We will send you an email with instructions\non how to reset your password.</string>
-    <string name="reset_your_password_here">Reset your password here</string>
-    <string name="forgot">Forgot</string>
-    <string name="complete_profile">Complete Profile</string>
-    <string name="complete">Complete</string>
-    <string name="complete_profile_slogan">Unleash Opportunities\nYour Profile Holds the Key!</string>
-    <string name="field_of_study">Field of Study</string>
-    <string name="level">Level</string>
-    <string name="institution">Institution</string>
-    <string name="cgpa">CGPA</string>
-    <string name="graduation_year">Graduation Year</string>
     <string name="about">About</string>
     <string name="home">Home</string>
     <string name="profile">Profile</string>
@@ -49,7 +25,6 @@
     <string name="ios_developer">IOS Developer</string>
     <string name="web_developer">Web Developer</string>
     <string name="top_business_ideas">Top Business Ideas</string>
-    <string name="b1">Invest in Real Estate</string>
     <string name="start_a_dropshipping_business">Start a Dropshipping Business</string>
     <string name="become_a_virtual_assistant">Become a Virtual Assistant</string>
     <string name="become_a_freelance_writer">Become a Freelance Writer</string>
@@ -80,14 +55,12 @@
     <string name="hint_bio">Enter your bio</string>
     <string name="btn_complete">Complete</string>
     <string name="become_a_photographer_or_event_planner">Become a Photographer or Event Planner</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="notification_message">Keep up to date\nwith your notifications</string>
     <string name="temp_notification">Your favorite business has a new update. Discover more.</string>
     <string name="message_profile">Let\'s get to\nknow you better</string>
     <string name="basics">Basics</string>
     <string name="education">Education</string>
     <string name="logout">Logout</string>
-    <string name="type_message">Type your message here ...</string>
+    <string name="type_message">Type your message here …</string>
     <string name="temp_message_one">Hello World! Welcome to the world of Android Development</string>
 </resources>
