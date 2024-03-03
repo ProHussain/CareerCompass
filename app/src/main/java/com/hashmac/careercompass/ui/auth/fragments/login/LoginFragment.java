@@ -31,9 +31,8 @@ public class LoginFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         navController = Navigation.findNavController(binding.getRoot());
-        binding.tvCreate.setOnClickListener(v -> navController.navigate(R.id.action_loginFragment_to_registerFragment));
+        binding.tvNoAccount.setOnClickListener(v -> navController.navigate(R.id.action_loginFragment_to_registerFragment));
         binding.tvForgotPassword.setOnClickListener(v -> navController.navigate(R.id.action_loginFragment_to_forgotPasswordFragment));
-        // Todo: Add login logic here and navigate to home fragment or complete profile fragment
-        binding.btnNext.setOnClickListener(v -> navController.navigate(R.id.action_loginFragment_to_completeProfileFragment));
+        binding.btnLogin.setOnClickListener(v -> navController.navigate(R.id.action_loginFragment_to_completeProfileFragment));
     }
 }

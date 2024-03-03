@@ -30,4 +30,13 @@ public class SharedUtils {
             return new Gson().fromJson(user, User.class);
         }
     }
+
+    public void saveLoginStatus(boolean status) {
+        editor.putBoolean("loginStatus", status);
+        editor.apply();
+    }
+
+    public boolean getLoginStatus() {
+        return sharedPreferences.getBoolean("loginStatus", false);
+    }
 }

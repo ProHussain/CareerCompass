@@ -34,12 +34,12 @@ public class CompleteProfileFragment extends Fragment {
     private void initSpinAdapters() {
         ArrayAdapter<String> levelsAdapter = new ArrayAdapter<>(requireContext(), android.R.layout.simple_list_item_1, getResources().getStringArray(R.array.levels_of_edu));
         levelsAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        binding.etLevel.setAdapter(levelsAdapter);
-        binding.etLevel.setOnClickListener(v -> binding.etLevel.showDropDown());
-
-        ArrayAdapter<String> fieldsAdapter = new ArrayAdapter<>(requireContext(), android.R.layout.simple_list_item_1, getResources().getStringArray(R.array.fields_of_study));
-        fieldsAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        binding.etField.setAdapter(fieldsAdapter);
-        binding.etField.setOnClickListener(v -> binding.etField.showDropDown());
+//        binding.etLevel.setAdapter(levelsAdapter);
+//        binding.etLevel.setOnClickListener(v -> binding.etLevel.showDropDown());
+//
+//        ArrayAdapter<String> fieldsAdapter = new ArrayAdapter<>(requireContext(), android.R.layout.simple_list_item_1, getResources().getStringArray(R.array.fields_of_study));
+//        fieldsAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+//        binding.etField.setAdapter(fieldsAdapter);
+//        binding.etField.setOnClickListener(v -> binding.etField.showDropDown());
     }
 }

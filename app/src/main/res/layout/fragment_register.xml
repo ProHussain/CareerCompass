@@ -110,7 +110,7 @@
         tools:ignore="ContentDescription" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnLogin"
+        android:id="@+id/btnRegister"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="22dp"
@@ -118,7 +118,7 @@
         android:layout_marginEnd="22dp"
         android:background="@drawable/bg_btn_auth"
         android:fontFamily="@font/urbanist_semi_bold"
-        android:text="@string/btn_login"
+        android:text="@string/btn_register"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="15sp"
@@ -136,7 +136,7 @@
         android:textColor="@color/darkGrey"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+        app:layout_constraintTop_toBottomOf="@+id/btnRegister" />
 
     <ImageView
         android:id="@+id/viewRight"
@@ -145,7 +145,7 @@
         android:layout_marginStart="12dp"
         android:src="@drawable/auth_line"
         app:layout_constraintBottom_toBottomOf="@+id/tvOrLogin"
-        app:layout_constraintEnd_toEndOf="@+id/btnLogin"
+        app:layout_constraintEnd_toEndOf="@+id/btnRegister"
         app:layout_constraintStart_toEndOf="@+id/tvOrLogin"
         app:layout_constraintTop_toTopOf="@+id/tvOrLogin"
         tools:ignore="ContentDescription" />
@@ -158,7 +158,7 @@
         android:src="@drawable/auth_line"
         app:layout_constraintBottom_toBottomOf="@+id/tvOrLogin"
         app:layout_constraintEnd_toStartOf="@+id/tvOrLogin"
-        app:layout_constraintStart_toStartOf="@+id/btnLogin"
+        app:layout_constraintStart_toStartOf="@+id/btnRegister"
         app:layout_constraintTop_toTopOf="@+id/tvOrLogin"
         tools:ignore="ContentDescription" />
 
