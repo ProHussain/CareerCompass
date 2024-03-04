@@ -1,6 +1,6 @@
 package com.hashmac.careercompass.beans.user;
 
-class Education {
+public class Education {
     private String degree;
     private String subject;
     private String passingYear;

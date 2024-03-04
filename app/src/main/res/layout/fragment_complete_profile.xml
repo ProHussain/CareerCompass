@@ -15,7 +15,7 @@
         <TextView
             android:id="@+id/tvWelcomeMessage"
             android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginTop="18dp"
             android:fontFamily="@font/urbanist_bold"
             android:lineSpacingExtra="2dp"
@@ -23,73 +23,74 @@
             android:textColor="@color/dark"
             android:textSize="30sp" />
 
-        <EditText
+        <AutoCompleteTextView
             android:id="@+id/etSelectDegree"
             android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
-        android:background="@drawable/bg_et_auth"
+            android:background="@drawable/bg_et_auth"
             android:hint="@string/hint_select_degree"
-        android:inputType="none"
+            android:inputType="none"
             android:padding="18dp"
             android:textColor="@color/darkGrey"
             android:textColorHint="@color/grey"
             tools:ignore="Autofill" />
 
-    <AutoCompleteTextView
-        android:id="@+id/etSubject"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/bg_et_auth"
-        android:hint="@string/enter_your_subject"
-        android:padding="18dp"
-        android:textColor="@color/darkGrey"
-        android:textColorHint="@color/grey"
-        tools:ignore="Autofill" />
+        <AutoCompleteTextView
+            android:id="@+id/etSubject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_et_auth"
+            android:hint="@string/enter_your_subject"
+            android:padding="18dp"
+            android:completionThreshold="2"
+            android:textColor="@color/darkGrey"
+            android:textColorHint="@color/grey"
+            tools:ignore="Autofill" />
 
         <AutoCompleteTextView
             android:id="@+id/etPassingYear"
             android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-        android:background="@drawable/bg_et_auth"
+            android:background="@drawable/bg_et_auth"
             android:hint="@string/hint_passing_year"
             android:padding="18dp"
             android:textColor="@color/darkGrey"
             android:textColorHint="@color/grey"
             tools:ignore="Autofill" />
 
-    <EditText
-        android:id="@+id/etCGPA"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/bg_et_auth"
-        android:hint="@string/hint_cgpa"
-        android:inputType="numberDecimal"
-        android:padding="18dp"
-        android:textColor="@color/darkGrey"
-        android:textColorHint="@color/grey"
-        tools:ignore="Autofill" />
+        <EditText
+            android:id="@+id/etCGPA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_et_auth"
+            android:hint="@string/hint_cgpa"
+            android:inputType="numberDecimal"
+            android:padding="18dp"
+            android:textColor="@color/darkGrey"
+            android:textColorHint="@color/grey"
+            tools:ignore="Autofill" />
 
-    <EditText
-        android:id="@+id/etInstitute"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/bg_et_auth"
-        android:hint="@string/hint_institute"
-        android:inputType="text"
-        android:padding="18dp"
-        android:textColor="@color/darkGrey"
-        android:textColorHint="@color/grey"
-        tools:ignore="Autofill" />
+        <EditText
+            android:id="@+id/etInstitute"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_et_auth"
+            android:hint="@string/hint_institute"
+            android:inputType="text"
+            android:padding="18dp"
+            android:textColor="@color/darkGrey"
+            android:textColorHint="@color/grey"
+            tools:ignore="Autofill" />
 
         <EditText
             android:id="@+id/etSelectFavSubjects"
             android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:background="@drawable/bg_et_auth"
             android:hint="@string/hint_favorite_subjects"
@@ -99,13 +100,13 @@
             android:textColorHint="@color/grey"
             tools:ignore="Autofill" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:gravity="end"
-        android:text="@string/max_subjects"
-        android:textColor="@color/grey" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="end"
+            android:text="@string/max_subjects"
+            android:textColor="@color/grey" />
 
 
         <EditText

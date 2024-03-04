@@ -51,7 +51,7 @@
     <string name="hint_cgpa">Enter your CGPA</string>
     <string name="hint_institute">Enter your institute</string>
     <string name="hint_favorite_subjects">Select your favorite subjects</string>
-    <string name="max_subjects">Max 3 subjects</string>
+    <string name="max_subjects">Max 3 subjects separated by commas</string>
     <string name="hint_bio">Enter your bio</string>
     <string name="btn_complete">Complete</string>
     <string name="become_a_photographer_or_event_planner">Become a Photographer or Event Planner</string>

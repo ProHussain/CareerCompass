@@ -26,4 +26,11 @@ public class User {
         return experience;
     }
 
+    public void setEducation(Education education) {
+        this.education = education;
+    }
+
+    public void setExperience(Experience experience) {
+        this.experience = experience;
+    }
 }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <array name="levels_of_edu">
-        <item>Int.</item>
+    <array name="degree">
+        <item>Intermediate</item>
         <item>BA</item>
         <item>BSc.</item>
         <item>BS.</item>
