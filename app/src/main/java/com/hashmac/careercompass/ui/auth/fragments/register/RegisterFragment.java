@@ -10,6 +10,10 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 
+import android.text.SpannableString;
+import android.text.method.LinkMovementMethod;
+import android.text.style.ClickableSpan;
+import android.text.style.ForegroundColorSpan;
 import android.util.Patterns;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -41,8 +45,27 @@ public class RegisterFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         viewModel = new ViewModelProvider(this).get(RegisterViewModel.class);
         navController = Navigation.findNavController(binding.getRoot());
+        initView();
         initClicks();
         initObserver();
+    }
+
+    private void initView() {
+        String txtRegisterBottom = getString(R.string.txt_register_bottom)+" ";
+        String gotoLogin = getString(R.string.btn_login_now);
+        SpannableString spannableString = new SpannableString(txtRegisterBottom + gotoLogin);
+        ForegroundColorSpan colorSpan = new android.text.style.ForegroundColorSpan(getResources().getColor(R.color.colorPrimary, null));
+        ClickableSpan clickableSpan = new ClickableSpan() {
+            @Override
+            public void onClick(@NonNull View widget) {
+                Timber.d("onClick: ");
+                navController.navigateUp();
+            }
+        };
+        spannableString.setSpan(clickableSpan, txtRegisterBottom.length(), txtRegisterBottom.length() + gotoLogin.length(), 0);
+        spannableString.setSpan(colorSpan, txtRegisterBottom.length(), txtRegisterBottom.length() + gotoLogin.length(), 0);
+        binding.tvAlreadyAccount.setText(spannableString);
+        binding.tvAlreadyAccount.setMovementMethod(LinkMovementMethod.getInstance());
     }
 
     private void initObserver() {
@@ -61,8 +84,16 @@ public class RegisterFragment extends Fragment {
     }
 
     private void initClicks() {
-        binding.btnRegister.setOnClickListener(v -> {
-            registerUser();
+        binding.btnRegister.setOnClickListener(v -> registerUser());
+
+        binding.ivTogglePassword.setOnClickListener(v -> {
+            if (binding.etPassword.getTransformationMethod() == null) {
+                binding.etPassword.setTransformationMethod(new android.text.method.PasswordTransformationMethod());
+                binding.ivTogglePassword.setImageResource(R.drawable.ic_view_password);
+            } else {
+                binding.etPassword.setTransformationMethod(null);
+                binding.ivTogglePassword.setImageResource(R.drawable.ic_hide_password);
+            }
         });
     }
 

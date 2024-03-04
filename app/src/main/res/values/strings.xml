@@ -30,7 +30,8 @@
     <string name="become_a_freelance_writer">Become a Freelance Writer</string>
     <string name="b3">Start a Custom Cake Design Business</string>
     <string name="b2">Start a Print on Demand Business</string>
-    <string name="txt_login_bottom">Don\'t have an account? Register Now</string>
+    <string name="txt_login_bottom">Don\'t have an account?</string>
+    <string name="btn_register_now">Register Now</string>
     <string name="login_message">Welcome back!\nGlad to see you, Again!</string>
     <string name="hint_email">Enter your email</string>
     <string name="hint_password">Enter your password</string>
@@ -41,7 +42,8 @@
     <string name="hint_name">Enter your name</string>
     <string name="hint_phone">Enter your phone</string>
     <string name="or_register">Or Register with</string>
-    <string name="txt_register_bottom">Already have an account? Login Now</string>
+    <string name="txt_register_bottom">Already have an account?</string>
+    <string name="btn_login_now">Login Now</string>
     <string name="msg_forgot_password">Don\'t worry! It occurs. Please enter the email address linked with your account.</string>
     <string name="btn_send_code">Send Code</string>
     <string name="complete_profile_message">Connect better,\ncomplete your profile</string>
