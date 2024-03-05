@@ -9,10 +9,11 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.hashmac.careercompass.R;
+import com.hashmac.careercompass.databinding.ActivityMainBinding;
 import com.hashmac.careercompass.ui.base.BaseActivity;
 
 public class MainActivity extends BaseActivity {
-
+    private ActivityMainBinding binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

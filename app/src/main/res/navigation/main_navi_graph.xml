@@ -1,6 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/main_navi_graph">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navi_graph"
+    app:startDestination="@id/homeFragment">
 
+    <action
+        android:id="@+id/to_homeFragment"
+        app:destination="@id/homeFragment" />
+    <action
+        android:id="@+id/to_careerFragment"
+        app:destination="@id/careerFragment" />
+    <action
+        android:id="@+id/to_notificationFragment"
+        app:destination="@id/notificationFragment" />
+    <action
+        android:id="@+id/to_profileFragment"
+        app:destination="@id/profileFragment" />
+
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.hashmac.careercompass.ui.main.fragments.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/careerFragment"
+        android:name="com.hashmac.careercompass.ui.main.fragments.career.CareerFragment"
+        android:label="fragment_career"
+        tools:layout="@layout/fragment_career" />
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="com.hashmac.careercompass.ui.main.fragments.notifications.NotificationFragment"
+        android:label="fragment_notification"
+        tools:layout="@layout/fragment_notification" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.hashmac.careercompass.ui.main.fragments.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
 </navigation>
