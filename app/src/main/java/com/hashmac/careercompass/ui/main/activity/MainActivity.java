@@ -1,22 +1,26 @@
 package com.hashmac.careercompass.ui.main.activity;
 
 import android.os.Bundle;
+import android.util.Log;
 
-import androidx.activity.EdgeToEdge;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.hashmac.careercompass.R;
 import com.hashmac.careercompass.databinding.ActivityMainBinding;
 import com.hashmac.careercompass.ui.base.BaseActivity;
 
 public class MainActivity extends BaseActivity {
     private ActivityMainBinding binding;
+    private NavController navController;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        binding = ActivityMainBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
+        navController = Navigation.findNavController(this, R.id.nav_host_fragment_container);
+
     }
 }
