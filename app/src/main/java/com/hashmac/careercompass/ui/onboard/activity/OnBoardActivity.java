@@ -27,7 +27,6 @@ public class OnBoardActivity extends BaseActivity {
         SplashScreen.installSplashScreen(this)
                         .setKeepOnScreenCondition(() -> splashScreenOn);
         boardBinding = ActivityOnBoardBinding.inflate(getLayoutInflater());
-        setContentView(boardBinding.getRoot());
         new Handler(Looper.getMainLooper()).postDelayed(() -> {
             splashScreenOn = false;
             checkLogin();
@@ -38,6 +37,8 @@ public class OnBoardActivity extends BaseActivity {
         sharedUtils = new SharedUtils(this);
         if (sharedUtils.getLoginStatus()) {
             startActivity(new Intent(this, MainActivity.class));
+        } else {
+            setContentView(boardBinding.getRoot());
         }
     }
 }

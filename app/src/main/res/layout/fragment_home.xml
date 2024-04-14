@@ -87,7 +87,7 @@
                         app:layout_constraintVertical_bias="0.25" />
 
                     <com.google.android.material.button.MaterialButton
-                        android:id="@+id/button"
+                        android:id="@+id/btnJoinNow"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:backgroundTint="@color/dark"
@@ -119,6 +119,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView5">
 
             <LinearLayout
+                android:id="@+id/cardAndroid"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
@@ -168,6 +169,7 @@
             app:layout_constraintTop_toTopOf="@+id/cardView2">
 
             <LinearLayout
+                android:id="@+id/cardIOS"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
@@ -209,6 +211,7 @@
             app:layout_constraintTop_toBottomOf="@+id/cardView3">
 
             <LinearLayout
+                android:id="@+id/cardWeb"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
@@ -273,6 +276,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView6">
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/cardDropshipping"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 app:cardBackgroundColor="#C2185B"
@@ -289,6 +293,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/cardPrintOnDemand"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:layout_marginTop="8dp"
@@ -306,6 +311,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/cardCustomCake"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:layout_marginTop="8dp"
@@ -323,6 +329,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/cardFreelanceWriter"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:layout_marginTop="8dp"
@@ -340,6 +347,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/cardVirtualAssistant"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:layout_marginTop="8dp"
@@ -357,6 +365,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/cardPhotographer"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:layout_marginTop="8dp"

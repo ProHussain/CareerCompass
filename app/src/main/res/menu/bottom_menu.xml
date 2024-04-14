@@ -4,9 +4,9 @@
         android:title="@string/home"
         android:icon="@drawable/ic_home"/>
 
-    <item android:id="@+id/businessFragment"
-        android:title="@string/business"
-        android:icon="@drawable/ic_business"/>
+<!--    <item android:id="@+id/businessFragment"-->
+<!--        android:title="@string/business"-->
+<!--        android:icon="@drawable/ic_business"/>-->
 
     <item android:id="@+id/careerFragment"
         android:title="@string/career"

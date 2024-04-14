@@ -39,4 +39,10 @@ public class SharedUtils {
     public boolean getLoginStatus() {
         return sharedPreferences.getBoolean("loginStatus", false);
     }
+
+    public void logoutUser() {
+        saveLoginStatus(false);
+        editor.remove("user");
+        editor.apply();
+    }
 }

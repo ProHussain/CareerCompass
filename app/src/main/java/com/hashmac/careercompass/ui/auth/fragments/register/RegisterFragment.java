@@ -34,7 +34,7 @@ public class RegisterFragment extends Fragment {
     private NavController navController;
     private DialogWaiting dialogWaiting;
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         binding = FragmentRegisterBinding.inflate(inflater,container,false);
         return binding.getRoot();

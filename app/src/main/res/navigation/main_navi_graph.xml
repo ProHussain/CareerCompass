@@ -21,7 +21,7 @@
         android:label="fragment_notification"
         tools:layout="@layout/fragment_notification" />
     <fragment
-        android:id="@+id/profileProfile"
+        android:id="@+id/profileFragment"
         android:name="com.hashmac.careercompass.ui.main.fragments.profile.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />

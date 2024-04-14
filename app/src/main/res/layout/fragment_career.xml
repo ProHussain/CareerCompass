@@ -3,8 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:padding="22dp"
     android:layout_height="match_parent"
+    android:padding="22dp"
     tools:context=".ui.main.fragments.career.CareerFragment">
 
     <TextView
@@ -23,12 +23,13 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="22dp"
-        android:ems="10"
         android:background="@drawable/bg_et_auth"
-        android:hint="@string/type_message"
+        android:ems="10"
         android:gravity="start|top"
-        android:padding="18dp"
+        android:hint="@string/type_message"
         android:inputType="textMultiLine"
+        android:padding="18dp"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/ivSend"
         app:layout_constraintStart_toStartOf="parent"
@@ -39,21 +40,67 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_send"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="@+id/etMessage"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/etMessage"
         tools:ignore="ContentDescription" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvChat"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"
-        tools:itemCount="5"
-        tools:listitem="@layout/item_chat_left"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toTopOf="@+id/etMessage"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvWelcome" />
+        app:layout_constraintTop_toBottomOf="@+id/tvWelcome"
+        tools:itemCount="5"
+        tools:listitem="@layout/item_chat_left" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/careerAnimation"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvWelcome"
+        app:layout_constraintVertical_bias="0.33"
+        app:lottie_rawRes="@raw/anim_career" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/startAnimation"
+        android:layout_width="match_parent"
+        app:lottie_rawRes="@raw/anim_start"
+        android:layout_height="64dp"
+        app:lottie_loop="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/careerAnimation"
+        app:layout_constraintVertical_bias="0.75"
+        app:lottie_autoPlay="true" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/loadingAnimation"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:elevation="3dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvWelcome"
+        app:lottie_rawRes="@raw/anim_loading" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

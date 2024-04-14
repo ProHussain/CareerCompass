@@ -1,18 +1,22 @@
 package com.hashmac.careercompass.beans;
 
+import com.google.firebase.Timestamp;
+
 public class Notification {
     private String id;
     private String title;
     private String message;
-    private Long date;
+    private String actionURL;
+    private Timestamp date;
 
     public Notification() {
     }
 
-    public Notification(String id, String title, String message, Long date) {
+    public Notification(String id, String title, String message, String actionURL, Timestamp date) {
         this.id = id;
         this.title = title;
         this.message = message;
+        this.actionURL = actionURL;
         this.date = date;
     }
 
@@ -28,7 +32,11 @@ public class Notification {
         return message;
     }
 
-    public Long getDate() {
+    public String getActionURL() {
+        return actionURL;
+    }
+
+    public Timestamp getDate() {
         return date;
     }
 }
