@@ -15,7 +15,7 @@
             android:id="@+id/tvProfileMessage"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="22dp"
+            android:layout_marginTop="56dp"
             android:fontFamily="@font/urbanist_bold"
             android:lineSpacingExtra="2dp"
             android:text="@string/message_profile"

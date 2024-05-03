@@ -1,20 +1,21 @@
 package com.hashmac.careercompass.ui.main.fragments.career;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-
 import com.hashmac.careercompass.beans.chat.Chat;
 import com.hashmac.careercompass.databinding.FragmentCareerBinding;
 import com.hashmac.careercompass.ui.main.activity.MainActivity;
 import com.hashmac.careercompass.ui.main.fragments.career.adapter.ChatAdapter;
+import com.hashmac.careercompass.ui.result.ResultActivity;
 import com.hashmac.careercompass.utils.Constants;
 
 import java.util.List;
@@ -54,6 +55,10 @@ public class CareerFragment extends Fragment {
             binding.etMessage.setVisibility(View.VISIBLE);
             binding.ivSend.setVisibility(View.VISIBLE);
         });
+
+        binding.ivSend.setOnClickListener(v -> {
+            sendResponse();
+        });
     }
 
     private void initObserver() {
@@ -64,17 +69,12 @@ public class CareerFragment extends Fragment {
 
         viewModel.isChatCompleted.observe(getViewLifecycleOwner(), isCompleted -> {
             if (Boolean.TRUE.equals(isCompleted)) {
-                binding.rvChat.setVisibility(View.GONE);
-                binding.etMessage.setVisibility(View.GONE);
-                binding.ivSend.setVisibility(View.GONE);
-                ((MainActivity) requireActivity()).disableBottomNav();
-                binding.loadingAnimation.setVisibility(View.VISIBLE);
-                makeApiCallForAnalysis();
+                generatePrompt();
             }
         });
     }
 
-    private void makeApiCallForAnalysis() {
+    private void generatePrompt() {
         List<Chat> chatList = viewModel.careerChatList.getValue();
         // Remove the first 3 messages from the list
         assert chatList != null;
@@ -89,14 +89,20 @@ public class CareerFragment extends Fragment {
             }
         }
         prompt.append(Constants.finalWords);
+        prompt.append("\n\n").append(Constants.exampleJSON);
         Timber.d("Prompt: %s", prompt.toString());
+        // Send Prompt to Result
+        Intent intent = new Intent(requireContext(), ResultActivity.class);
+        intent.putExtra("from", "career");
+        intent.putExtra("prompt", prompt.toString());
+        startActivity(intent);
+        viewModel.clearChat();
     }
 
     private void initView() {
         viewModel.getUser(requireContext());
         adapter = new ChatAdapter();
         binding.rvChat.setAdapter(adapter);
-        binding.ivSend.setOnClickListener(v -> sendResponse());
     }
 
     private void sendResponse() {

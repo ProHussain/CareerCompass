@@ -41,7 +41,7 @@ public class LoginFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         viewModel = new ViewModelProvider(this).get(LoginViewModel.class);
-        navController = Navigation.findNavController(binding.getRoot());
+        navController = Navigation.findNavController(view);
         initView();
         initClicks();
         initObservers();
@@ -91,7 +91,6 @@ public class LoginFragment extends Fragment {
     }
 
     private void initClicks() {
-        binding.tvNoAccount.setOnClickListener(v -> navController.navigate(R.id.action_loginFragment_to_registerFragment));
         binding.tvForgotPassword.setOnClickListener(v -> forgotPassword());
         binding.btnLogin.setOnClickListener(v -> loginUser());
         binding.ivTogglePassword.setOnClickListener(v -> {
@@ -107,6 +106,10 @@ public class LoginFragment extends Fragment {
 
     private void forgotPassword() {
         navController.navigate(R.id.action_loginFragment_to_forgotPasswordFragment);
+    }
+
+    private void registerUser() {
+        navController.navigateUp();
     }
 
     private void loginUser() {

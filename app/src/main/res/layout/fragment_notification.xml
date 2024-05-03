@@ -8,7 +8,7 @@
     tools:context=".ui.main.fragments.notifications.NotificationFragment">
 
     <TextView
-        android:layout_marginTop="@dimen/space_between_views"
+        android:layout_marginTop="56dp"
         android:id="@+id/tvWelcomeMessage"
         android:layout_width="0dp"
         android:layout_height="wrap_content"

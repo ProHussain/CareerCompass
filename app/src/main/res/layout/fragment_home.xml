@@ -16,7 +16,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/space_between_views"
-            android:layout_marginTop="@dimen/space_between_views"
+            android:layout_marginTop="56dp"
             android:text="@string/welcome_to_ncareercompass"
             android:textColor="@color/dark"
             android:fontFamily="@font/urbanist_bold"
@@ -381,6 +381,43 @@
                     android:textColor="@color/white"
                     android:textSize="16sp" />
             </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardCattleFarm"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                app:cardBackgroundColor="#7F312B"
+                app:cardCornerRadius="8dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="12dp"
+                    android:text="@string/cattle_and_poultry_farming"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardFruitFarm"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                app:cardBackgroundColor="#267629"
+                app:cardCornerRadius="8dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="12dp"
+                    android:text="@string/fruits_and_vegetables_farming"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </androidx.cardview.widget.CardView>
+
         </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -11,13 +11,6 @@
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action
-            android:id="@+id/action_loginFragment_to_registerFragment"
-            app:destination="@id/registerFragment"
-            app:enterAnim="@anim/slide_in_right"
-            app:exitAnim="@anim/slide_out_right"
-            app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_left" />
-        <action
             android:id="@+id/action_loginFragment_to_forgotPasswordFragment"
             app:destination="@id/forgotPasswordFragment"
             app:enterAnim="@anim/slide_in_right"
@@ -31,19 +24,13 @@
             app:exitAnim="@anim/slide_out_right"
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_left" />
-    </fragment>
-    <fragment
-        android:id="@+id/registerFragment"
-        android:name="com.hashmac.careercompass.ui.auth.fragments.register.RegisterFragment"
-        android:label="fragment_register"
-        tools:layout="@layout/fragment_register" >
         <action
-            android:id="@+id/action_registerFragment_to_completeProfileFragment"
-            app:destination="@id/completeProfileFragment"
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment"
             app:enterAnim="@anim/slide_in_right"
             app:exitAnim="@anim/slide_out_right"
             app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_left" />
+            app:popExitAnim="@anim/slide_out_left"/>
     </fragment>
     <fragment
         android:id="@+id/completeProfileFragment"
@@ -55,4 +42,17 @@
         android:name="com.hashmac.careercompass.ui.auth.fragments.forgot_password.ForgotPasswordFragment"
         android:label="fragment_forgot_password"
         tools:layout="@layout/fragment_forgot_password" />
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.hashmac.careercompass.ui.auth.fragments.register.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_completeProfileFragment"
+            app:destination="@id/completeProfileFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_left"/>
+    </fragment>
 </navigation>

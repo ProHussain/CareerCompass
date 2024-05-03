@@ -70,4 +70,9 @@ public class CareerViewModel extends ViewModel {
         generalQuestions.add(new Chat("9", "What are some industries or roles you're interested in exploring?", 1, ""));
         generalQuestions.add(new Chat("10", "What motivates you in your work or studies?", 1, ""));
     }
+
+    public void clearChat() {
+        chatList.clear();
+        careerChatList.setValue(chatList);
+    }
 }

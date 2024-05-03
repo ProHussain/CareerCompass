@@ -45,7 +45,6 @@
         android:gravity="center"
         android:text="@string/onBoardDescriptionOne"
         android:textColor="@color/white"
-        android:textSize="10sp"
         app:layout_constraintBottom_toTopOf="@+id/btnNext"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

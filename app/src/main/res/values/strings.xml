@@ -67,4 +67,6 @@
     <string name="temp_message_one">Hello World! Welcome to the world of Android Development</string>
     <string name="btn_register">Register</string>
     <string name="loading">Loading…</string>
+    <string name="cattle_and_poultry_farming">Cattle and Poultry Farming</string>
+    <string name="fruits_and_vegetables_farming">Fruits and Vegetables Farming</string>
 </resources>
