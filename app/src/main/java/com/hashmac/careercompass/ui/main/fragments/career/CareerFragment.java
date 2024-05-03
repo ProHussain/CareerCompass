@@ -61,6 +61,16 @@ public class CareerFragment extends Fragment {
         });
     }
 
+    @Override
+    public void onResume() {
+        super.onResume();
+        binding.rvChat.setVisibility(View.GONE);
+        binding.etMessage.setVisibility(View.GONE);
+        binding.ivSend.setVisibility(View.GONE);
+        binding.startAnimation.setVisibility(View.VISIBLE);
+        binding.careerAnimation.setVisibility(View.VISIBLE);
+    }
+
     private void initObserver() {
         viewModel.careerChatList.observe(getViewLifecycleOwner(), chats -> {
             adapter.setChatList(chats);

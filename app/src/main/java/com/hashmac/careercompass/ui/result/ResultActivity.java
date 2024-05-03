@@ -169,17 +169,8 @@ public class ResultActivity extends BaseActivity {
         binding.loadingAnimation.setVisibility(View.VISIBLE);
         binding.llResult.setVisibility(View.GONE);
 
-        GenerationConfig.Builder configBuilder = new GenerationConfig.Builder();
-        configBuilder.temperature = 0.9f;
-        configBuilder.topK = 16;
-        configBuilder.topP = 0.1f;
-        configBuilder.maxOutputTokens = 200;
-        configBuilder.stopSequences = Arrays.asList("red");
-
-        GenerationConfig generationConfig = configBuilder.build();
-
         String prompt = Constants.getDetailsPrompt(title);
-        GenerativeModel generativeModel = new GenerativeModel("gemini-pro", "REDACTED_GEMINI_API_KEY",generationConfig);
+        GenerativeModel generativeModel = new GenerativeModel("gemini-pro", "REDACTED_GEMINI_API_KEY");
         GenerativeModelFutures generativeModelFutures = GenerativeModelFutures.from(generativeModel);
         Content content = new Content.Builder()
                 .addText(prompt)
@@ -203,6 +194,18 @@ public class ResultActivity extends BaseActivity {
             @Override
             public void onFailure(@NonNull Throwable t) {
                 Timber.e(t);
+                AlertDialog.Builder builder = new AlertDialog.Builder(ResultActivity.this);
+                builder.setTitle("Error");
+                builder.setMessage("Google AI model is not responding. Please try again later.");
+                builder.setPositiveButton("Try Again", (dialog, which) -> {
+                    fetchCompleteAnalysis(title);
+                    dialog.dismiss();
+                });
+                builder.setNegativeButton("Cancel", (dialog, which) -> {
+                    dialog.dismiss();
+                    finish();
+                });
+                builder.show();
             }
         }, executor);
     }
