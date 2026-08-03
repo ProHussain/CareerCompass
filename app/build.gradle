@@ -15,6 +15,15 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        // Gemini API key comes from local.properties (never committed):
+        // GEMINI_API_KEY=your_key_here
+        Properties localProps = new Properties()
+        def localPropsFile = rootProject.file('local.properties')
+        if (localPropsFile.exists()) {
+            localPropsFile.withInputStream { localProps.load(it) }
+        }
+        buildConfigField 'String', 'GEMINI_API_KEY', "\"${localProps.getProperty('GEMINI_API_KEY', '')}\""
     }
 
     buildTypes {
@@ -30,6 +39,7 @@ android {
 
     buildFeatures {
         viewBinding true
+        buildConfig true
     }
 }
 

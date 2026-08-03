@@ -18,6 +18,7 @@ import com.google.common.util.concurrent.FutureCallback;
 import com.google.common.util.concurrent.Futures;
 import com.google.common.util.concurrent.ListenableFuture;
 import com.google.gson.Gson;
+import com.hashmac.careercompass.BuildConfig;
 import com.hashmac.careercompass.beans.result.CareerPath;
 import com.hashmac.careercompass.beans.result.CareerPaths;
 import com.hashmac.careercompass.databinding.ActivityResultBinding;
@@ -79,7 +80,7 @@ public class ResultActivity extends BaseActivity {
     }
 
     private void makeApiCall(String prompt) {
-        GenerativeModel generativeModel = new GenerativeModel("gemini-pro", "REDACTED_GEMINI_API_KEY");
+        GenerativeModel generativeModel = new GenerativeModel("gemini-pro", BuildConfig.GEMINI_API_KEY);
         GenerativeModelFutures generativeModelFutures = GenerativeModelFutures.from(generativeModel);
         Content content = new Content.Builder()
                 .addText(prompt.toString())
@@ -170,7 +171,7 @@ public class ResultActivity extends BaseActivity {
         binding.llResult.setVisibility(View.GONE);
 
         String prompt = Constants.getDetailsPrompt(title);
-        GenerativeModel generativeModel = new GenerativeModel("gemini-pro", "REDACTED_GEMINI_API_KEY");
+        GenerativeModel generativeModel = new GenerativeModel("gemini-pro", BuildConfig.GEMINI_API_KEY);
         GenerativeModelFutures generativeModelFutures = GenerativeModelFutures.from(generativeModel);
         Content content = new Content.Builder()
                 .addText(prompt)
